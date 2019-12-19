@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+  
+    <title>Guerra Fria</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<link rel="shortcut icon" href="imagens/icone.ico" />
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+    <body>
+
+      <header>
+        <div class="collapse bg-danger" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">Sobre o projeto:</h4>
+                <p class="text-white">Este é um site totalmente voltado a um projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Desenvolvedores:</h4>
+                <ul class="list-unstyled">
+                  <li><p class="text-white">João Victor Pinheiro</p></li>
+                  <li><p class="text-white">Tulio Sérgio</p></li>
+                  <li><p class="text-white">Felipe Saraiva</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-danger shadow-sm">
+          <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <strong>Informações</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+  
+      <main role="main">
+  
+        <section class="jumbotron text-center">
+          <div class="container">
+			<img src="imagens/h.png" width="250px"><br>
+            <h1 class="jumbotron-heading">Eventos históricos que mudaram o mundo</h1>
+            <p class="lead text-muted">Aqui estão dez questões sobre os assuntos que foram abordados nesse site. Boa sorte!</p>
+			<a class="btn btn-danger" href="index.html" role="button">Página inicial</a>
+          </div>
+        </section>
+		
+		<div class="album py-5 bg-light">
+          <div class="container">
+			<h2 class="text-center">Exercícios:</h2>
+			
+				<form id="questoes" name="questoes" method="post">
+				<p>
+					<label for="textfield"><strong>1º</strong> A Revolução Francesa iniciou-se em 1789 e estendeu-se até 1799, 
+					quando Napoleão Bonaparte assumiu o poder da França com o Golpe de 18 de Brumário. 
+					Esse acontecimento foi influenciado pelos ideais do:<br>
+					<p>a. Romantismo;</p>
+					<p>b. Iluminismo;</p>
+					<p>c. Socialismo;</p>
+					<p>d. Anarquismo;</p>
+					<p>e. Nilismo;</p>
+					</label>
+					<input type="text" name="resposta1" id="resposta1"><br><br>
+					<input onClick="respQuestao1()" class="btn btn-danger" type="button" name="button" id="button" value="Confirmar">
+				</p>
+				<p>
+					<label for="textfield"><strong>2º</strong> Grande parte dos acontecimentos e das grandes decisões tomadas durante a 
+					Revolução Francesa foram realizados pelo povo, a massa formada principalmente de camponeses. Além do povo, 
+					outra classe que teve grande peso com o deflagrar da Revolução e sua condução foi:<br>
+					<p>a. a burguesia;</p>
+					<p>b. a nobreza;</p>
+					<p>c. o clero;</p>
+					<p>d. os vassalos;</p>
+					<p>e. nenhuma das respostas acima;</p>
+					</label>
+					<input type="text" name="resposta2" id="resposta2"><br><br>
+					<input onClick="respQuestao2()" class="btn btn-danger" type="button" name="button" id="button" value="Confirmar">
+				</p>
+				<script>
+					var respCerta = 0;
+					
+					function respQuestao1(){
+						var resposta = questoes.resposta1.value;
+						
+						if(resposta == 'b'){
+							window.alert('Resposta certa.');
+							respCerta++;
+						}else{
+							window.alert('Resposta errada.');
+						}
+					}
+					
+					function respQuestao2(){
+						var resposta = questoes.resposta2.value;
+						
+						if(resposta == 'a'){
+							window.alert('Resposta certa.');
+							respCerta++;
+						}else{
+							window.alert('Resposta errada.');
+						}
+					}
+				</script>
+		</div>
+	</div> 
+
+      </main>
+  
+      <footer class="text-muted">
+        <div class="container">
+          <p class="float-right">
+            <a class="btn btn-danger" href="#" role="button">Voltar ao topo</a>
+          </p>
+        </div>
+      </footer>
+  
+      <!-- Principal JavaScript do Bootstrap
+      ================================================== -->
+      <!-- Foi colocado no final para a página carregar mais rápido -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/vendor/holder.min.js"></script>
+    </body>
+</html>
